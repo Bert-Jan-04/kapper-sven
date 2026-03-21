@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Kapper Sven Wijnjewoude</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="info.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVIGATIE -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-main">Kapper Sven</span>
+          <span class="logo-sub">Kapsalon Wijnjewoude</span>
+        </a>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="over.html">Over Sven</a></li>
+        <li><a href="diensten.html">Diensten</a></li>
+        <li><a href="prijzen.html">Prijzen</a></li>
+        <li><a href="openingstijden.html">Openingstijden</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html" class="nav-active">Contact</a></li>
+      </ul>
+      <a href="afspraak.html" class="btn-nav">Afspraak maken</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- CONTACT GRID -->
+  <section class="section pagina-start">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- LINKS: INFO -->
+        <div class="contact-info">
+          <p class="section-label">Neem contact op</p>
+          <h1 class="section-title">Contact</h1>
+          <p class="contact-intro">Heb je een vraag, wil je een afspraak maken of gewoon even hallo zeggen? Neem gerust contact op.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <h4>Adres</h4>
+                <p>Gentiaan 42, Wijnjewoude</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <h4>Telefoon</h4>
+                <a href="tel:0621882144">06 – 21882144</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <h4>E-mail</h4>
+                <a href="mailto:info@dijkstrasven.nl">info@dijkstrasven.nl</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+              <div>
+                <h4>Instagram</h4>
+                <a href="https://www.instagram.com/_.svendijkstra._/" target="_blank" rel="noopener">@_.svendijkstra._</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-tijden">
+            <h4><i class="fas fa-clock"></i> Openingstijden</h4>
+            <div class="contact-tijden-lijst">
+              <div class="contact-tijd-row"><span>Ma – Wo</span><span>09:00 – 18:00</span></div>
+              <div class="contact-tijd-row contact-tijd-highlight"><span>Donderdag</span><span>09:00 – 21:00</span></div>
+              <div class="contact-tijd-row"><span>Vrijdag</span><span>09:00 – 18:00</span></div>
+              <div class="contact-tijd-row"><span>Zaterdag</span><span>09:00 – 17:00</span></div>
+              <div class="contact-tijd-row contact-tijd-gesloten"><span>Zondag</span><span>Gesloten</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RECHTS: FORMULIER -->
+        <div class="contact-formulier-wrap">
+          <form class="contact-formulier" onsubmit="return false;">
+            <h3>Stuur een bericht</h3>
+            <div class="form-row">
+              <div class="form-groep">
+                <label for="naam">Naam</label>
+                <input type="text" id="naam" placeholder="Jouw naam" />
+              </div>
+              <div class="form-groep">
+                <label for="telefoon">Telefoon</label>
+                <input type="tel" id="telefoon" placeholder="06 – 00000000" />
+              </div>
+            </div>
+            <div class="form-groep">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" placeholder="jouw@email.nl" />
+            </div>
+            <div class="form-groep">
+              <label for="onderwerp">Onderwerp</label>
+              <select id="onderwerp">
+                <option value="">Selecteer een onderwerp</option>
+                <option>Afspraak maken</option>
+                <option>Vraag over diensten</option>
+                <option>Vraag over prijzen</option>
+                <option>Anders</option>
+              </select>
+            </div>
+            <div class="form-groep">
+              <label for="bericht">Bericht</label>
+              <textarea id="bericht" rows="5" placeholder="Schrijf hier je bericht..."></textarea>
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+              Verstuur bericht <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- KAART -->
+  <section class="contact-kaart">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.0!2d6.1833!3d53.0833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sGentiaan+42%2C+Wijnjewoude!5e0!3m2!1snl!2snl!4v1234567890"
+      width="100%"
+      height="100%"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Locatie Kapper Sven">
+    </iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo footer-logo">
+          <span class="logo-main">Kapper Sven</span>
+          <span class="logo-sub">Kapsalon Wijnjewoude</span>
+        </div>
+        <p>Dé specialist in herenkapsels van Wijnjewoude.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/_.svendijkstra._/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Gentiaan 42, Wijnjewoude</p>
+        <p><i class="fas fa-phone"></i> 06 – 21882144</p>
+        <p><i class="fas fa-envelope"></i> info@dijkstrasven.nl</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="over.html">Over Sven</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="prijzen.html">Prijzen</a></li>
+          <li><a href="openingstijden.html">Openingstijden</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Openingstijden</h4>
+        <p>Ma – Wo: 09:00 – 18:00</p>
+        <p>Do: 09:00 – 21:00</p>
+        <p>Vr: 09:00 – 18:00</p>
+        <p>Za: 09:00 – 17:00</p>
+        <p>Zo: Gesloten</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kapper Sven. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

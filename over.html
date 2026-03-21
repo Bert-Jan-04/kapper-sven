@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Over Sven – Kapper Sven Wijnjewoude</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="over.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVIGATIE -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-main">Kapper Sven</span>
+          <span class="logo-sub">Kapsalon Wijnjewoude</span>
+        </a>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="over.html" class="nav-active">Over Sven</a></li>
+        <li><a href="diensten.html">Diensten</a></li>
+        <li><a href="prijzen.html">Prijzen</a></li>
+        <li><a href="openingstijden.html">Openingstijden</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="index.html#boek" class="btn-nav">Afspraak maken</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-img" style="background-image: url('foto_sven_2.jpg')"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <p class="hero-label">Leer me kennen</p>
+      <h1>Over Sven</h1>
+      <p>Van het voetbalveld naar de kappersstoel</p>
+    </div>
+    <div class="page-hero-scroll" onclick="document.getElementById('verhaal').scrollIntoView({behavior:'smooth'})">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- INTRO QUOTE -->
+  <section class="section intro-sectie" id="verhaal">
+    <div class="container">
+      <div class="intro-grid">
+        <div class="intro-tekst">
+          <p class="section-label">Wie is Sven?</p>
+          <h2 class="section-title">Jong, gedreven<br>en scherp</h2>
+          <blockquote class="grote-quote">
+            "Ik vind het leuk om anderen er verzorgd uit te laten zien en met een lach weg te laten gaan."
+          </blockquote>
+          <p class="intro-sub">Met 21 jaar ben ik misschien jong, maar ik weet precies wat er speelt op het gebied van herenkapsels. Mode en trends hebben me altijd geboeid , en je haar is daar een groot onderdeel van. In mijn kapsalon staat een relaxte sfeer centraal: we knippen, we praten, en je gaat er altijd beter uitziend vandoor.</p>
+          <div class="intro-stats">
+            <div class="intro-stat"><strong>21</strong><span>Jaar oud</span></div>
+            <div class="intro-stat"><strong>100%</strong><span>Focus op heren</span></div>
+            <div class="intro-stat"><strong>4,7 ★</strong><span>Google rating</span></div>
+          </div>
+        </div>
+        <div class="intro-foto">
+          <img src="foto_sven_1.jpg" alt="Sven Dijkstra" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOETBAL VERHAAL -->
+  <section class="section section-dark verhaal-sectie">
+    <div class="container">
+      <div class="verhaal-grid">
+        <div class="verhaal-foto">
+          <img src="foto_sven_3.jpg" alt="Sven in actie voor SC Cambuur" />
+          <div class="verhaal-foto-label">
+            <i class="fas fa-futbol"></i>
+            <span>SC Cambuur</span>
+          </div>
+        </div>
+        <div class="verhaal-tekst">
+          <p class="section-label">Het verhaal</p>
+          <h2 class="section-title">Van topsport<br>naar vakmanschap</h2>
+          <p>Jarenlang presteerde ik op topsportniveau als voetballer bij <strong>SC Cambuur</strong>. Discipline, precisie en altijd voor het beste gaan , dat zit er bij mij ingebakken. Toen het tijd was voor een nieuwe uitdaging, hoefde ik niet lang na te denken.</p>
+          <p>Mode en trends hielden me altijd al bezig. Je haar is een groot onderdeel van hoe je eruitziet en hoe je je voelt. Ik besloot een <strong>barbercursus</strong> te volgen om de kneepjes van het vak te leren en zette daarna mijn eigen kapsalon op.</p>
+          <p>De mentaliteit van een topsporter neem ik mee naar elke knipbeurt: ik ga voor het beste resultaat, altijd.</p>
+          <div class="verhaal-tags">
+            <span><i class="fas fa-futbol"></i> SC Cambuur</span>
+            <span><i class="fas fa-graduation-cap"></i> Barbercursus</span>
+            <span><i class="fas fa-fire"></i> Eigen zaak</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIALITEITEN -->
+  <section class="section specialiteiten-sectie">
+    <div class="container">
+      <p class="section-label">Waar ik goed in ben</p>
+      <h2 class="section-title">Mijn specialiteiten</h2>
+      <p class="section-sub">Volledig gespecialiseerd in herenkapsels , van simpel tot de meest technische fades</p>
+      <div class="specialiteiten-grid">
+        <div class="spec-card">
+          <div class="spec-icon"><i class="fas fa-cut"></i></div>
+          <h3>Klassiek Knippen</h3>
+          <p>Strakke, tijdloze coupe die altijd goed zit. Perfect afgewerkt tot op de millimeter.</p>
+        </div>
+        <div class="spec-card spec-card--featured">
+          <div class="spec-badge">Populairst</div>
+          <div class="spec-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>Fade & Taper</h3>
+          <p>Van low fade tot drop fade en skin fade , vloeiende overgangen die echt het verschil maken.</p>
+          <ul class="spec-list">
+            <li>Low Fade</li>
+            <li>Mid Fade</li>
+            <li>High Fade</li>
+            <li>Drop Fade</li>
+            <li>Skin Fade</li>
+            <li>Taper</li>
+          </ul>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon"><i class="fas fa-spa"></i></div>
+          <h3>Baard & Scheren</h3>
+          <p>Strakke baardlijn, trimmen of klassiek scheren met warm doek , altijd verzorgd.</p>
+        </div>
+        <div class="spec-card">
+          <div class="spec-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Kleuren & Trends</h3>
+          <p>Altijd op de hoogte van de nieuwste kleur- en stijltrends voor mannen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SFEER SECTIE -->
+  <section class="sfeer-sectie">
+    <div class="sfeer-img" style="background-image: url('foto_sven_4.jpg')"></div>
+    <div class="sfeer-overlay"></div>
+    <div class="sfeer-content">
+      <p class="section-label">De sfeer bij Kapper Sven</p>
+      <h2>"Bij mij kun je gewoon<br>jezelf zijn"</h2>
+      <p>Geen stijve barbershop waar je stil moet zitten. Bij Kapper Sven is het relaxed , we praten over voetbal, mode, muziek of whatever. Jij voelt je op je gemak, en dat zie je terug in het resultaat.</p>
+      <a href="index.html#boek" class="btn-primary">Kom langs</a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta-over">
+    <div class="container" style="text-align: center;">
+      <p class="section-label">Klaar voor een nieuwe look?</p>
+      <h2 class="section-title">Boek jouw afspraak</h2>
+      <p class="section-sub" style="margin: 0 auto 36px;">Inlopen mag altijd , of bel me even.</p>
+      <div class="cta-btns">
+        <a href="index.html#boek" class="btn-primary">Afspraak maken</a>
+        <a href="tel:0621882144" class="btn-outline"><i class="fas fa-phone"></i> 06 – 21882144</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo footer-logo">
+          <span class="logo-main">Kapper Sven</span>
+          <span class="logo-sub">Kapsalon Wijnjewoude</span>
+        </div>
+        <p>Dé specialist in herenkapsels van Wijnjewoude.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/_.svendijkstra._/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Gentiaan 42, Wijnjewoude</p>
+        <p><i class="fas fa-phone"></i> 06 – 21882144</p>
+        <p><i class="fas fa-envelope"></i> info@dijkstrasven.nl</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="over.html">Over Sven</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="prijzen.html">Prijzen</a></li>
+          <li><a href="openingstijden.html">Openingstijden</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Openingstijden</h4>
+        <p>Ma – Wo: 09:00 – 18:00</p>
+        <p>Do: 09:00 – 21:00</p>
+        <p>Vr: 09:00 – 18:00</p>
+        <p>Za: 09:00 – 17:00</p>
+        <p>Zo: Gesloten</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kapper Sven. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

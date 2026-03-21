@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Afspraak Maken – Kapper Sven Wijnjewoude</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="info.css" />
+  <link rel="stylesheet" href="afspraak.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVIGATIE -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-main">Kapper Sven</span>
+          <span class="logo-sub">Kapsalon Wijnjewoude</span>
+        </a>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="over.html">Over Sven</a></li>
+        <li><a href="diensten.html">Diensten</a></li>
+        <li><a href="prijzen.html">Prijzen</a></li>
+        <li><a href="openingstijden.html">Openingstijden</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="afspraak.html" class="btn-nav">Afspraak maken</a>
+      <button class="hamburger" id="hamburger" aria-label="Menu openen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGINA INHOUD -->
+  <section class="section pagina-start">
+    <div class="container">
+      <div class="afspraak-grid">
+
+        <!-- LINKS: UITLEG -->
+        <div class="afspraak-info">
+          <p class="section-label">Snel en eenvoudig</p>
+          <h1 class="section-title">Afspraak maken</h1>
+          <p class="afspraak-intro">Vul het formulier in en je bericht wordt automatisch klaargezet in WhatsApp. Verstuur het en Sven neemt zo snel mogelijk contact op om de afspraak te bevestigen.</p>
+
+          <div class="afspraak-stappen">
+            <div class="stap">
+              <div class="stap-nr">1</div>
+              <div>
+                <h4>Vul het formulier in</h4>
+                <p>Naam, telefoonnummer, dienst, datum en tijd.</p>
+              </div>
+            </div>
+            <div class="stap">
+              <div class="stap-nr">2</div>
+              <div>
+                <h4>Klik op versturen</h4>
+                <p>WhatsApp opent met je bericht klaar om te versturen.</p>
+              </div>
+            </div>
+            <div class="stap">
+              <div class="stap-nr">3</div>
+              <div>
+                <h4>Bevestiging van Sven</h4>
+                <p>Sven reageert zo snel mogelijk om je afspraak te bevestigen.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="afspraak-direct">
+            <p>Liever direct bellen?</p>
+            <a href="tel:0621882144" class="btn-outline">
+              <i class="fas fa-phone"></i> 06 – 21882144
+            </a>
+          </div>
+        </div>
+
+        <!-- RECHTS: FORMULIER -->
+        <div class="afspraak-formulier-wrap">
+          <form class="afspraak-formulier" id="afspraakForm">
+            <div class="formulier-header">
+              <i class="fab fa-whatsapp"></i>
+              <h3>Afspraak via WhatsApp</h3>
+            </div>
+
+            <div class="form-groep">
+              <label for="naam">Naam <span class="verplicht">*</span></label>
+              <input type="text" id="naam" placeholder="Jouw volledige naam" required />
+            </div>
+
+            <div class="form-groep">
+              <label for="telefoon">Telefoonnummer <span class="verplicht">*</span></label>
+              <input type="tel" id="telefoon" placeholder="06 – 00000000" required />
+            </div>
+
+            <div class="form-groep">
+              <label for="dienst">Gewenste dienst <span class="verplicht">*</span></label>
+              <select id="dienst" required>
+                <option value="">Kies een dienst</option>
+                <option>Heren Knippen</option>
+                <option>Fade & Taper</option>
+                <option>Baard Trimmen</option>
+                <option>Haar Styling</option>
+                <option>Knippen + Baard</option>
+                <option>Knippen + Wassen + Stylen</option>
+                <option>Alles-in-één pakket</option>
+              </select>
+            </div>
+
+            <div class="form-row">
+              <div class="form-groep">
+                <label for="datum">Datum <span class="verplicht">*</span></label>
+                <input type="date" id="datum" required />
+              </div>
+              <div class="form-groep">
+                <label for="tijd">Gewenste tijd <span class="verplicht">*</span></label>
+                <select id="tijd" required>
+                  <option value="">Kies een tijd</option>
+                  <option>09:00</option>
+                  <option>09:30</option>
+                  <option>10:00</option>
+                  <option>10:30</option>
+                  <option>11:00</option>
+                  <option>11:30</option>
+                  <option>12:00</option>
+                  <option>12:30</option>
+                  <option>13:00</option>
+                  <option>13:30</option>
+                  <option>14:00</option>
+                  <option>14:30</option>
+                  <option>15:00</option>
+                  <option>15:30</option>
+                  <option>16:00</option>
+                  <option>16:30</option>
+                  <option>17:00</option>
+                  <option>17:30</option>
+                  <option>18:00</option>
+                  <option>18:30</option>
+                  <option>19:00</option>
+                  <option>19:30</option>
+                  <option>20:00</option>
+                  <option>20:30</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-groep">
+              <label for="opmerking">Opmerking <span class="optioneel">(optioneel)</span></label>
+              <textarea id="opmerking" rows="3" placeholder="Bijv. specifieke wensen of vragen..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-whatsapp">
+              <i class="fab fa-whatsapp"></i> Verstuur via WhatsApp
+            </button>
+
+            <p class="formulier-info">
+              <i class="fas fa-info-circle"></i>
+              WhatsApp opent automatisch met jouw bericht. Inlopen zonder afspraak mag ook altijd.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo footer-logo">
+          <span class="logo-main">Kapper Sven</span>
+          <span class="logo-sub">Kapsalon Wijnjewoude</span>
+        </div>
+        <p>Dé specialist in herenkapsels van Wijnjewoude.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/_.svendijkstra._/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-map-marker-alt"></i> Gentiaan 42, Wijnjewoude</p>
+        <p><i class="fas fa-phone"></i> 06 – 21882144</p>
+        <p><i class="fas fa-envelope"></i> info@dijkstrasven.nl</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="over.html">Over Sven</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="prijzen.html">Prijzen</a></li>
+          <li><a href="openingstijden.html">Openingstijden</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Openingstijden</h4>
+        <p>Ma – Wo: 09:00 – 18:00</p>
+        <p>Do: 09:00 – 21:00</p>
+        <p>Vr: 09:00 – 18:00</p>
+        <p>Za: 09:00 – 17:00</p>
+        <p>Zo: Gesloten</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Kapper Sven. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Minimale datum = vandaag
+    const datumInput = document.getElementById('datum');
+    const vandaag = new Date().toISOString().split('T')[0];
+    datumInput.setAttribute('min', vandaag);
+
+    // WhatsApp formulier
+    document.getElementById('afspraakForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const naam    = document.getElementById('naam').value.trim();
+      const telefoon = document.getElementById('telefoon').value.trim();
+      const dienst  = document.getElementById('dienst').value;
+      const datum   = document.getElementById('datum').value;
+      const tijd    = document.getElementById('tijd').value;
+      const opmerking = document.getElementById('opmerking').value.trim();
+
+      if (!naam || !telefoon || !dienst || !datum || !tijd) {
+        alert('Vul alle verplichte velden in.');
+        return;
+      }
+
+      // Datum netjes opmaken
+      const datumObj = new Date(datum);
+      const datumNetjes = datumObj.toLocaleDateString('nl-NL', {
+        weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+      });
+
+      let bericht =
+        `Hallo Sven! Ik wil graag een afspraak maken. 😊\n\n` +
+        `👤 Naam: ${naam}\n` +
+        `📱 Telefoon: ${telefoon}\n` +
+        `✂️ Dienst: ${dienst}\n` +
+        `📅 Datum: ${datumNetjes}\n` +
+        `🕐 Tijd: ${tijd}`;
+
+      if (opmerking) {
+        bericht += `\n💬 Opmerking: ${opmerking}`;
+      }
+
+      const url = `https://wa.me/31621882144?text=${encodeURIComponent(bericht)}`;
+      window.open(url, '_blank');
+    });
+  </script>
+</body>
+</html>
