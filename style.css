@@ -908,6 +908,8 @@ footer {
 
   .hero-tagline { font-size: 1rem; }
 
+  .hero-content { padding-top: 80px; }
+
   /* Voorkomt automatisch inzoomen op iOS bij het aantikken van inputs */
   .form-groep input,
   .form-groep select,
