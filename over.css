@@ -403,4 +403,10 @@
   .intro-stats { flex-direction: column; }
   .intro-stat { border-right: none; border-bottom: 1px solid #e8e8e8; }
   .intro-stat:last-child { border-bottom: none; }
+  .intro-foto img { height: 280px; }
+  .verhaal-foto img { height: 240px; }
+  .verhaal-foto-label { left: 12px; font-size: 0.82rem; }
+  .sfeer-content { padding: 60px 20px; }
+  .grote-quote { font-size: 1.2rem; }
+  .page-hero { min-height: 70vh; }
 }

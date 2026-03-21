@@ -252,4 +252,8 @@
   .diensten-nav a { flex: 1 1 100%; }
   .sven-callout-btns { flex-direction: column; }
   .dienst-meta { flex-direction: column; gap: 12px; }
+  .dienst-info { padding: 40px 20px; }
+  .sven-callout-tekst { padding: 40px 20px; }
+  .dienst-foto { height: 260px; }
+  .sven-callout-foto { height: 240px; }
 }

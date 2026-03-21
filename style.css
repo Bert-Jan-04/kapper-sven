@@ -160,7 +160,8 @@ img { max-width: 100%; display: block; }
   width: 24px; height: 2px;
   background: var(--white);
   border-radius: 2px;
-  transition: 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transform-origin: center;
 }
 
 /* =============================================
@@ -837,6 +838,8 @@ footer {
   .nav-links, .btn-nav { display: none; }
   .hamburger { display: flex; }
 
+  .nav-container { padding: 16px 20px; }
+
   .nav-links.open {
     display: flex;
     flex-direction: column;
@@ -849,6 +852,23 @@ footer {
     font-size: 1.3rem;
     z-index: 999;
   }
+
+  /* Toon afspraak-knop onderaan het mobiele menu */
+  .nav-links.open ~ .btn-nav {
+    display: flex !important;
+    position: fixed;
+    bottom: 48px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    white-space: nowrap;
+  }
+
+  /* Hamburger → X animatie */
+  .nav-links.open ~ .hamburger { z-index: 1001; }
+  .nav-links.open ~ .hamburger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .nav-links.open ~ .hamburger span:nth-child(2) { opacity: 0; }
+  .nav-links.open ~ .hamburger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
   .over-grid { grid-template-columns: 1fr; gap: 56px; }
   .over-img img { height: 380px; }
@@ -868,18 +888,33 @@ footer {
 }
 
 @media (max-width: 600px) {
-  .section { padding: 72px 0; }
+  .section { padding: 64px 0; }
+  .container { padding: 0 16px; }
 
   .gallery-grid { grid-template-columns: 1fr; grid-template-rows: auto; }
-  .gallery-item { height: 280px; }
-  .gallery-item--cta { height: auto; min-height: 240px; }
+  .gallery-item { height: 260px; }
+  .gallery-item--cta { height: auto; min-height: 220px; }
+
+  .diensten-grid { grid-template-columns: 1fr; }
 
   .prijzen-wrapper { grid-template-columns: 1fr; }
 
   .footer-grid { grid-template-columns: 1fr; }
   .hero-btns, .cta-btns { flex-direction: column; align-items: center; }
 
-  .hero-stats { flex-direction: column; gap: 0; padding: 16px 32px; }
+  .hero-stats { flex-direction: column; gap: 0; padding: 16px 24px; }
   .hero-stat { padding: 12px 0; }
   .hero-stat-divider { width: 60px; height: 1px; }
+
+  .hero-tagline { font-size: 1rem; }
+
+  /* Voorkomt automatisch inzoomen op iOS bij het aantikken van inputs */
+  .form-groep input,
+  .form-groep select,
+  .form-groep textarea { font-size: 16px; }
+
+  .cta-section { padding: 80px 20px; }
+
+  .footer-grid { padding: 0 16px 48px; }
+  .footer-bottom { padding: 20px 16px; }
 }

@@ -351,10 +351,21 @@
   .inloop-grid { grid-template-columns: 1fr; }
   .locatie-grid { grid-template-columns: 1fr; }
   .locatie-map { height: 300px; }
-  .reviews-grid--groot { grid-template-columns: 1fr; }
+  .reviews-grid--groot { grid-template-columns: 1fr 1fr; }
   .rating-groot { flex-direction: column; gap: 20px; padding: 32px 28px; }
   .rating-cijfer { font-size: 3.5rem; }
   .contact-grid { grid-template-columns: 1fr; gap: 48px; }
   .contact-formulier-wrap { position: static; }
   .form-row { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .pagina-start { padding-top: 80px; }
+  .reviews-grid--groot { grid-template-columns: 1fr; }
+  .rating-groot { padding: 24px 20px; }
+  .contact-formulier { padding: 28px 20px; }
+  .contact-kaart { height: 260px; }
+  .locatie-map { height: 240px; }
+  .prijzen-info-grid { gap: 20px; }
+  .inloop-grid { gap: 20px; }
 }
