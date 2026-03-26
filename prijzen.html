@@ -43,66 +43,16 @@
       <p class="section-label">Tarieven</p>
       <h2 class="section-title">Wat kost het?</h2>
       <p class="section-sub">Alle prijzen zijn inclusief btw</p>
-      <div class="prijzen-wrapper">
-
+      <div class="prijzen-wrapper" id="prijzen-container">
         <div class="prijs-categorie">
           <div class="prijs-cat-header">
             <div class="prijs-cat-icon"><i class="fas fa-cut"></i></div>
-            <h3>Knippen</h3>
+            <h3>Tarieven</h3>
           </div>
-          <div class="prijs-items">
-            <div class="prijs-item">
-              <span class="prijs-naam">Knippen</span>
-              <span class="prijs-bedrag">€ 22,50</span>
-            </div>
-            <div class="prijs-item">
-              <span class="prijs-naam">Knippen + wassen</span>
-              <span class="prijs-bedrag">€ 27,50</span>
-            </div>
-            <div class="prijs-item">
-              <span class="prijs-naam">Knippen + wassen + stylen</span>
-              <span class="prijs-bedrag">€ 35,00</span>
-            </div>
-            <div class="prijs-item prijs-item--top">
-              <span class="prijs-naam">Alles-in-één pakket <span class="prijs-badge">Beste deal</span></span>
-              <span class="prijs-bedrag">€ 40,00</span>
-            </div>
-            <div class="prijs-item prijs-item--top">
-              <span class="prijs-naam">Fade & Taper <span class="prijs-badge">Populair</span></span>
-              <span class="prijs-bedrag">€ 25,00</span>
-            </div>
-            <div class="prijs-item">
-              <span class="prijs-naam">Kleuren / Highlights</span>
-              <span class="prijs-bedrag">v.a. € 30,00</span>
-            </div>
+          <div class="prijs-items" id="prijs-items">
+            <!-- Wordt ingeladen via /api/content -->
           </div>
         </div>
-
-        <div class="prijs-categorie">
-          <div class="prijs-cat-header">
-            <div class="prijs-cat-icon"><i class="fas fa-spa"></i></div>
-            <h3>Baard</h3>
-          </div>
-          <div class="prijs-items">
-            <div class="prijs-item">
-              <span class="prijs-naam">Baard trimmen</span>
-              <span class="prijs-bedrag">€ 17,50</span>
-            </div>
-            <div class="prijs-item prijs-item--top">
-              <span class="prijs-naam">Knippen + baard <span class="prijs-badge">Populair</span></span>
-              <span class="prijs-bedrag">€ 35,00</span>
-            </div>
-            <div class="prijs-item">
-              <span class="prijs-naam">Hot towel scheren</span>
-              <span class="prijs-bedrag">€ 22,50</span>
-            </div>
-            <div class="prijs-item">
-              <span class="prijs-naam">Knippen + scheren</span>
-              <span class="prijs-bedrag">€ 40,00</span>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -188,5 +138,18 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    fetch('/api/content')
+      .then(r => r.json())
+      .then(data => {
+        const container = document.getElementById('prijs-items');
+        container.innerHTML = data.prijzen.map(p => `
+          <div class="prijs-item">
+            <span class="prijs-naam">${p.naam}</span>
+            <span class="prijs-bedrag">${p.prijs}</span>
+          </div>
+        `).join('');
+      });
+  </script>
 </body>
 </html>

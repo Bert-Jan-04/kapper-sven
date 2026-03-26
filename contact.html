@@ -52,21 +52,21 @@
               <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
               <div>
                 <h4>Adres</h4>
-                <p>Gentiaan 42, Wijnjewoude</p>
+                <p id="contact-adres">Gentiaan 42, Wijnjewoude</p>
               </div>
             </div>
             <div class="contact-item">
               <div class="contact-icon"><i class="fas fa-phone"></i></div>
               <div>
                 <h4>Telefoon</h4>
-                <a href="tel:0621882144">06 – 21882144</a>
+                <a id="contact-telefoon" href="tel:0621882144">06 – 21882144</a>
               </div>
             </div>
             <div class="contact-item">
               <div class="contact-icon"><i class="fas fa-envelope"></i></div>
               <div>
                 <h4>E-mail</h4>
-                <a href="mailto:info@dijkstrasven.nl">info@dijkstrasven.nl</a>
+                <a id="contact-email" href="mailto:info@dijkstrasven.nl">info@dijkstrasven.nl</a>
               </div>
             </div>
             <div class="contact-item">
@@ -80,12 +80,8 @@
 
           <div class="contact-tijden">
             <h4><i class="fas fa-clock"></i> Openingstijden</h4>
-            <div class="contact-tijden-lijst">
-              <div class="contact-tijd-row"><span>Ma – Wo</span><span>09:00 – 18:00</span></div>
-              <div class="contact-tijd-row contact-tijd-highlight"><span>Donderdag</span><span>09:00 – 21:00</span></div>
-              <div class="contact-tijd-row"><span>Vrijdag</span><span>09:00 – 18:00</span></div>
-              <div class="contact-tijd-row"><span>Zaterdag</span><span>09:00 – 17:00</span></div>
-              <div class="contact-tijd-row contact-tijd-gesloten"><span>Zondag</span><span>Gesloten</span></div>
+            <div class="contact-tijden-lijst" id="contact-tijden">
+              <!-- Wordt ingeladen via /api/content -->
             </div>
           </div>
         </div>
@@ -191,5 +187,30 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    fetch('/api/content')
+      .then(r => r.json())
+      .then(data => {
+        const c = data.contact;
+
+        document.getElementById('contact-adres').textContent = c.adres;
+
+        const tel = document.getElementById('contact-telefoon');
+        tel.textContent = c.telefoon;
+        tel.href = 'tel:' + c.telefoon.replace(/\s/g, '');
+
+        const mail = document.getElementById('contact-email');
+        mail.textContent = c.email;
+        mail.href = 'mailto:' + c.email;
+
+        const tijden = document.getElementById('contact-tijden');
+        tijden.innerHTML = data.openingstijden.map(o => {
+          const gesloten = o.tijd.toLowerCase() === 'gesloten';
+          return `<div class="contact-tijd-row${gesloten ? ' contact-tijd-gesloten' : ''}">
+            <span>${o.dag}</span><span>${o.tijd}</span>
+          </div>`;
+        }).join('');
+      });
+  </script>
 </body>
 </html>

@@ -1,0 +1,8 @@
+# Node.js
+node_modules/
+
+# Admin inloggegevens (wachtwoord-hash)
+data/admin.json
+
+# Lokale omgevingsvariabelen (als je die later toevoegt)
+.env

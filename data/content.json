@@ -1,0 +1,23 @@
+{
+  "prijzen": [
+    { "naam": "Knippen heren", "prijs": "€15" },
+    { "naam": "Knippen jongeren (t/m 16 jaar)", "prijs": "€12" },
+    { "naam": "Knippen + baard trimmen", "prijs": "€22" },
+    { "naam": "Baard trimmen", "prijs": "€10" },
+    { "naam": "Kinderknippen (t/m 10 jaar)", "prijs": "€10" }
+  ],
+  "openingstijden": [
+    { "dag": "Maandag", "tijd": "Gesloten" },
+    { "dag": "Dinsdag", "tijd": "09:00 - 18:00" },
+    { "dag": "Woensdag", "tijd": "09:00 - 18:00" },
+    { "dag": "Donderdag", "tijd": "09:00 - 18:00" },
+    { "dag": "Vrijdag", "tijd": "09:00 - 18:00" },
+    { "dag": "Zaterdag", "tijd": "09:00 - 17:00" },
+    { "dag": "Zondag", "tijd": "Gesloten" }
+  ],
+  "contact": {
+    "telefoon": "+32 123 45 67 89",
+    "email": "info@kappersven.be",
+    "adres": "Kapper Sven, Straatnaam 1, 0000 Stad"
+  }
+}
