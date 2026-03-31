@@ -4,13 +4,13 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --green:       #2D6A4F;
-  --green-light: #40916C;
+  --green:       #6B4C35;
+  --green-light: #A07850;
   --dark:        #111111;
   --dark2:       #1a1a1a;
   --dark3:       #232323;
-  --light:       #f7f5f0;
-  --white:       #ffffff;
+  --light:       #f5f0e8;
+  --white:       #faf7f2;
   --gray:        #888888;
   --text:        #2c2c2c;
   --font-head:   'Playfair Display', serif;
@@ -51,7 +51,7 @@ img { max-width: 100%; display: block; }
 .btn-primary:hover {
   background: var(--green-light);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(45,106,79,0.4);
+  box-shadow: 0 8px 24px rgba(107,76,53,0.4);
 }
 
 .btn-secondary {
@@ -317,7 +317,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.82rem;
   font-weight: 600;
   text-align: center;
-  box-shadow: 0 8px 24px rgba(45,106,79,0.35);
+  box-shadow: 0 8px 24px rgba(107,76,53,0.35);
 }
 .over-img-badge i { font-size: 1.6rem; }
 
@@ -348,7 +348,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.8rem;
   width: 22px;
   height: 22px;
-  background: rgba(45,106,79,0.12);
+  background: rgba(107,76,53,0.12);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -479,7 +479,7 @@ img { max-width: 100%; display: block; }
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(45,106,79,0.55);
+  background: rgba(107,76,53,0.55);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -562,9 +562,9 @@ img { max-width: 100%; display: block; }
 .prijs-item:hover { background: rgba(255,255,255,0.03); }
 
 .prijs-item--top {
-  background: rgba(45,106,79,0.08);
+  background: rgba(107,76,53,0.08);
 }
-.prijs-item--top:hover { background: rgba(45,106,79,0.14); }
+.prijs-item--top:hover { background: rgba(107,76,53,0.14); }
 
 .prijs-naam {
   color: rgba(255,255,255,0.85);
@@ -617,7 +617,7 @@ img { max-width: 100%; display: block; }
 }
 .tijd-row:first-child { border-top: 1px solid #eee; }
 .tijd-row:hover { background: var(--light); }
-.tijd-row.highlight { background: #f0f7f4; font-weight: 600; }
+.tijd-row.highlight { background: #f5ede4; font-weight: 600; }
 .tijd-row.highlight span:first-child { color: var(--green); }
 .tijd-row.gesloten { color: var(--gray); font-style: italic; }
 .tijd-row em { font-size: 0.82rem; color: var(--green); font-style: normal; margin-left: 6px; }
