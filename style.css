@@ -534,7 +534,7 @@ img { max-width: 100%; display: block; }
   align-items: center;
   gap: 16px;
   padding: 28px 28px 24px;
-  border-bottom: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 .prijs-cat-icon {
   width: 48px; height: 48px;
@@ -549,7 +549,7 @@ img { max-width: 100%; display: block; }
 .prijs-cat-header h3 {
   font-family: var(--font-head);
   font-size: 1.4rem;
-  color: var(--white);
+  color: var(--text);
 }
 
 .prijs-items { padding: 8px 0; }
@@ -559,12 +559,12 @@ img { max-width: 100%; display: block; }
   justify-content: space-between;
   align-items: center;
   padding: 16px 28px;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  border-bottom: 1px solid rgba(0,0,0,0.07);
   transition: background 0.2s;
   gap: 12px;
 }
 .prijs-item:last-child { border-bottom: none; }
-.prijs-item:hover { background: rgba(255,255,255,0.03); }
+.prijs-item:hover { background: rgba(0,0,0,0.03); }
 
 .prijs-item--top {
   background: rgba(139,58,37,0.08);
@@ -572,7 +572,7 @@ img { max-width: 100%; display: block; }
 .prijs-item--top:hover { background: rgba(139,58,37,0.14); }
 
 .prijs-naam {
-  color: rgba(255,255,255,0.85);
+  color: var(--text);
   font-size: 0.93rem;
   display: flex;
   align-items: center;

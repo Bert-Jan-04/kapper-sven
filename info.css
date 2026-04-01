@@ -157,8 +157,8 @@
   display: inline-flex;
   align-items: center;
   gap: 40px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.1);
   border-radius: 20px;
   padding: 40px 56px;
   margin-top: 32px;
@@ -167,13 +167,13 @@
   font-family: var(--font-head);
   font-size: 5rem;
   font-weight: 800;
-  color: var(--white);
+  color: var(--text);
   line-height: 1;
 }
 .rating-sterren { margin-bottom: 8px; }
-.rating-sterren i { color: var(--green-light); font-size: 1.3rem; }
-.rating-details p { color: rgba(255,255,255,0.65); font-size: 0.95rem; }
-.rating-details strong { color: var(--white); }
+.rating-sterren i { color: var(--green); font-size: 1.3rem; }
+.rating-details p { color: var(--gray); font-size: 0.95rem; }
+.rating-details strong { color: var(--text); }
 
 .reviews-grid--groot {
   grid-template-columns: repeat(3, 1fr);
