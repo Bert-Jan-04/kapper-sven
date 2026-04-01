@@ -7,13 +7,13 @@
     { "naam": "Kinderknippen (t/m 10 jaar)", "prijs": "€10" }
   ],
   "openingstijden": [
-    { "dag": "Maandag", "tijd": "Gesloten" },
-    { "dag": "Dinsdag", "tijd": "09:00 - 18:00" },
-    { "dag": "Woensdag", "tijd": "09:00 - 18:00" },
-    { "dag": "Donderdag", "tijd": "09:00 - 18:00" },
-    { "dag": "Vrijdag", "tijd": "09:00 - 18:00" },
-    { "dag": "Zaterdag", "tijd": "09:00 - 17:00" },
-    { "dag": "Zondag", "tijd": "Gesloten" }
+    { "dag": "Maandag", "tijd": "Wisselend" },
+    { "dag": "Dinsdag", "tijd": "13:00 – 15:30" },
+    { "dag": "Woensdag", "tijd": "13:00 – 15:30" },
+    { "dag": "Donderdag", "tijd": "13:00 – 15:30" },
+    { "dag": "Vrijdag", "tijd": "Wisselend" },
+    { "dag": "Zaterdag", "tijd": "Gesloten" },
+    { "dag": "Zondag", "tijd": "12:30 – 19:00" }
   ],
   "contact": {
     "telefoon": "+32 123 45 67 89",
