@@ -94,9 +94,14 @@ img { max-width: 100%; display: block; }
   transition: background 0.4s, box-shadow 0.4s;
 }
 #navbar.scrolled {
-  background: var(--dark);
-  box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  background: var(--white);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
 }
+#navbar.scrolled .nav-links a { color: var(--text); }
+#navbar.scrolled .nav-links a:hover { color: var(--green); }
+#navbar.scrolled .nav-links a::after { background: var(--green); }
+#navbar.scrolled .logo-sub { color: var(--gray); }
+#navbar.scrolled .hamburger span { background: var(--text); }
 
 .nav-container {
   max-width: 1200px;
@@ -845,13 +850,14 @@ footer {
     flex-direction: column;
     position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: var(--dark);
+    background: var(--white);
     justify-content: center;
     align-items: center;
     gap: 32px;
     font-size: 1.3rem;
     z-index: 999;
   }
+  .nav-links.open a { color: var(--text) !important; }
 
   /* Toon afspraak-knop onderaan het mobiele menu */
   .nav-links.open ~ .btn-nav {
