@@ -6,11 +6,11 @@
 :root {
   --green:       #8B3A25;
   --green-light: #C49070;
-  --dark:        #2C1A10;
-  --dark2:       #4A2C1A;
-  --dark3:       #5E3822;
-  --light:       #EDE5D8;
-  --white:       #F5F0E8;
+  --dark:        #3D2B1F;
+  --dark2:       #E0D5C5;
+  --dark3:       #EAE0D2;
+  --light:       #F0E8DC;
+  --white:       #FAF6F0;
   --gray:        #9A8878;
   --text:        #2C1F18;
   --font-head:   'Playfair Display', serif;
@@ -362,11 +362,11 @@ img { max-width: 100%; display: block; }
 .section { padding: 100px 0; }
 .section-dark {
   background: var(--dark2);
-  color: var(--white);
+  color: var(--text);
 }
-.section-dark .section-label { color: var(--green-light); }
-.section-dark .section-sub { color: rgba(255,255,255,0.6); }
-.section-dark .section-title { color: var(--white); }
+.section-dark .section-label { color: var(--green); }
+.section-dark .section-sub { color: var(--gray); }
+.section-dark .section-title { color: var(--text); }
 
 .container {
   max-width: 1200px;
@@ -429,7 +429,7 @@ img { max-width: 100%; display: block; }
   font-size: 3rem;
   font-family: var(--font-head);
   font-weight: 700;
-  color: rgba(255,255,255,0.04);
+  color: rgba(0,0,0,0.06);
   line-height: 1;
 }
 
@@ -448,9 +448,9 @@ img { max-width: 100%; display: block; }
   font-family: var(--font-head);
   font-size: 1.25rem;
   margin-bottom: 12px;
-  color: var(--white);
+  color: var(--text);
 }
-.dienst-card p { color: rgba(255,255,255,0.5); font-size: 0.95rem; line-height: 1.7; }
+.dienst-card p { color: var(--gray); font-size: 0.95rem; line-height: 1.7; }
 
 /* =============================================
    GALERIJ
@@ -665,10 +665,10 @@ img { max-width: 100%; display: block; }
   gap: 8px;
   margin-bottom: 48px;
   font-size: 1rem;
-  color: rgba(255,255,255,0.7);
+  color: var(--gray);
 }
-.google-rating i { color: var(--green-light); }
-.google-rating strong { color: var(--white); font-size: 1.1rem; }
+.google-rating i { color: var(--green); }
+.google-rating strong { color: var(--text); font-size: 1.1rem; }
 
 .reviews-grid {
   display: grid;
@@ -709,12 +709,12 @@ img { max-width: 100%; display: block; }
 .review-stars i { color: var(--green-light); font-size: 0.85rem; }
 
 .review-card p {
-  color: rgba(255,255,255,0.75);
+  color: var(--gray);
   font-size: 0.95rem;
   line-height: 1.75;
   font-style: italic;
 }
-.reviewer { color: var(--green-light); font-size: 0.88rem; font-weight: 600; }
+.reviewer { color: var(--green); font-size: 0.88rem; font-weight: 600; }
 
 /* =============================================
    CTA SECTIE

@@ -92,7 +92,7 @@
   right: 40px;
 }
 .section-dark .dienst-nr {
-  color: rgba(255,255,255,0.04);
+  color: rgba(0,0,0,0.06);
 }
 
 .dienst-info .section-label {
@@ -112,7 +112,7 @@
   margin-bottom: 28px;
 }
 .section-dark .dienst-beschrijving {
-  color: rgba(255,255,255,0.6);
+  color: var(--gray);
 }
 
 .dienst-tags {
@@ -144,7 +144,7 @@
   color: var(--gray);
 }
 .section-dark .dienst-meta-item {
-  color: rgba(255,255,255,0.5);
+  color: var(--gray);
 }
 .dienst-meta-item i {
   color: var(--green-light);
