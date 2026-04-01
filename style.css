@@ -4,19 +4,19 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --green:       #8B3A25;
-  --green-light: #C49070;
-  --dark:        #3D2B1F;
-  --dark2:       #E0D5C5;
-  --dark3:       #EAE0D2;
-  --light:       #F0E8DC;
-  --white:       #FAF6F0;
-  --gray:        #9A8878;
-  --text:        #2C1F18;
+  --green:       #1A1A1A;
+  --green-light: #B59A6A;
+  --dark:        #1A1A1A;
+  --dark2:       #EDE6D8;
+  --dark3:       #E6DDD0;
+  --light:       #F0E8DE;
+  --white:       #F7F2EB;
+  --gray:        #7A7260;
+  --text:        #1A1A1A;
   --font-head:   'Playfair Display', serif;
   --font-body:   'Inter', sans-serif;
   --radius:      12px;
-  --shadow:      0 8px 32px rgba(0,0,0,0.10);
+  --shadow:      0 8px 32px rgba(0,0,0,0.08);
 }
 
 html { scroll-behavior: smooth; }
@@ -51,7 +51,7 @@ img { max-width: 100%; display: block; }
 .btn-primary:hover {
   background: var(--green-light);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(139,58,37,0.4);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.22);
 }
 
 .btn-secondary {
@@ -179,7 +179,7 @@ img { max-width: 100%; display: block; }
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #1a1209;
+  background: #1A1A1A;
   color: var(--white);
   overflow: hidden;
 }
@@ -342,7 +342,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.82rem;
   font-weight: 600;
   text-align: center;
-  box-shadow: 0 8px 24px rgba(139,58,37,0.35);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
 }
 .over-img-badge i { font-size: 1.6rem; }
 
@@ -373,7 +373,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.8rem;
   width: 22px;
   height: 22px;
-  background: rgba(139,58,37,0.12);
+  background: rgba(0,0,0,0.06);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -504,7 +504,7 @@ img { max-width: 100%; display: block; }
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(139,58,37,0.55);
+  background: rgba(0,0,0,0.55);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -587,9 +587,9 @@ img { max-width: 100%; display: block; }
 .prijs-item:hover { background: rgba(0,0,0,0.03); }
 
 .prijs-item--top {
-  background: rgba(139,58,37,0.08);
+  background: rgba(0,0,0,0.04);
 }
-.prijs-item--top:hover { background: rgba(139,58,37,0.14); }
+.prijs-item--top:hover { background: rgba(0,0,0,0.08); }
 
 .prijs-naam {
   color: var(--text);
@@ -642,7 +642,7 @@ img { max-width: 100%; display: block; }
 }
 .tijd-row:first-child { border-top: 1px solid #eee; }
 .tijd-row:hover { background: var(--light); }
-.tijd-row.highlight { background: #f5ede4; font-weight: 600; }
+.tijd-row.highlight { background: #EBE3D4; font-weight: 600; }
 .tijd-row.highlight span:first-child { color: var(--green); }
 .tijd-row.gesloten { color: var(--gray); font-style: italic; }
 .tijd-row em { font-size: 0.82rem; color: var(--green); font-style: normal; margin-left: 6px; }

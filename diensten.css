@@ -122,9 +122,9 @@
   margin-bottom: 28px;
 }
 .dienst-tags span {
-  background: rgba(139,58,37,0.12);
+  background: rgba(0,0,0,0.05);
   color: var(--green-light);
-  border: 1px solid rgba(139,58,37,0.25);
+  border: 1px solid rgba(0,0,0,0.12);
   padding: 5px 14px;
   border-radius: 50px;
   font-size: 0.82rem;
