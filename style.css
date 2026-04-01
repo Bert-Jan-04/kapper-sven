@@ -4,19 +4,19 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --green:       #6B4C35;
-  --green-light: #A07850;
-  --dark:        #2A1F14;
-  --dark2:       #4A3326;
-  --dark3:       #5C4135;
-  --light:       #f5f0e8;
-  --white:       #faf7f2;
-  --gray:        #888888;
-  --text:        #2c2c2c;
+  --green:       #8B3A25;
+  --green-light: #C49070;
+  --dark:        #2C1A10;
+  --dark2:       #4A2C1A;
+  --dark3:       #5E3822;
+  --light:       #EDE5D8;
+  --white:       #F5F0E8;
+  --gray:        #9A8878;
+  --text:        #2C1F18;
   --font-head:   'Playfair Display', serif;
   --font-body:   'Inter', sans-serif;
   --radius:      12px;
-  --shadow:      0 8px 32px rgba(0,0,0,0.12);
+  --shadow:      0 8px 32px rgba(0,0,0,0.10);
 }
 
 html { scroll-behavior: smooth; }
@@ -51,7 +51,7 @@ img { max-width: 100%; display: block; }
 .btn-primary:hover {
   background: var(--green-light);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(107,76,53,0.4);
+  box-shadow: 0 8px 24px rgba(139,58,37,0.4);
 }
 
 .btn-secondary {
@@ -317,7 +317,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.82rem;
   font-weight: 600;
   text-align: center;
-  box-shadow: 0 8px 24px rgba(107,76,53,0.35);
+  box-shadow: 0 8px 24px rgba(139,58,37,0.35);
 }
 .over-img-badge i { font-size: 1.6rem; }
 
@@ -348,7 +348,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.8rem;
   width: 22px;
   height: 22px;
-  background: rgba(107,76,53,0.12);
+  background: rgba(139,58,37,0.12);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -479,7 +479,7 @@ img { max-width: 100%; display: block; }
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(107,76,53,0.55);
+  background: rgba(139,58,37,0.55);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -562,9 +562,9 @@ img { max-width: 100%; display: block; }
 .prijs-item:hover { background: rgba(255,255,255,0.03); }
 
 .prijs-item--top {
-  background: rgba(107,76,53,0.08);
+  background: rgba(139,58,37,0.08);
 }
-.prijs-item--top:hover { background: rgba(107,76,53,0.14); }
+.prijs-item--top:hover { background: rgba(139,58,37,0.14); }
 
 .prijs-naam {
   color: rgba(255,255,255,0.85);
