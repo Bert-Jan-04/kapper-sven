@@ -22,6 +22,20 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
+// ─── Hero video slider ───────────────────────────────────────────────────────
+const heroVideos = Array.from(document.querySelectorAll('.hero-video'));
+if (heroVideos.length > 0) {
+  let activeIdx = 0;
+  heroVideos[0].play();
+
+  setInterval(() => {
+    heroVideos[activeIdx].classList.remove('active');
+    activeIdx = (activeIdx + 1) % heroVideos.length;
+    heroVideos[activeIdx].classList.add('active');
+    heroVideos[activeIdx].play();
+  }, 4000);
+}
+
 // ─── Hero foto zoom animatie (over.html) ─────────────────────────────────────
 const heroImg = document.querySelector('.page-hero-img');
 if (heroImg) {
