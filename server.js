@@ -35,8 +35,16 @@ app.get('/api/content', (_req, res) => {
   res.json(JSON.parse(fs.readFileSync(path.join(__dirname, 'data/content.json'), 'utf-8')));
 });
 
-// Statische bestanden (HTML, CSS, JS, afbeeldingen)
-app.use(express.static(path.join(__dirname)));
+// Statische bestanden (HTML, CSS, JS, afbeeldingen) – geen cache
+app.use(express.static(path.join(__dirname), {
+  etag: false,
+  lastModified: false,
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith('.css') || filePath.endsWith('.js')) {
+      res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate');
+    }
+  }
+}));
 
 // Homepage
 app.get('/', (_req, res) => {
