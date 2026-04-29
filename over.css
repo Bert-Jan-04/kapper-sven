@@ -3,7 +3,7 @@
    ============================================= */
 .page-hero {
   position: relative;
-  height: 100vh;
+  height: 65vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -408,5 +408,5 @@
   .verhaal-foto-label { left: 12px; font-size: 0.82rem; }
   .sfeer-content { padding: 60px 20px; }
   .grote-quote { font-size: 1.2rem; }
-  .page-hero { height: 75vh; min-height: unset; }
+  .page-hero { height: 55vh; min-height: unset; }
 }

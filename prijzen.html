@@ -16,10 +16,7 @@
   <nav id="navbar">
     <div class="nav-container">
       <div class="logo">
-        <a href="index.html">
-          <span class="logo-main">Kapper Sven</span>
-          <span class="logo-sub">Kapsalon Wijnjewoude</span>
-        </a>
+        <a href="index.html"><img src="afbeeldingen/Logo-kapper-sven.png" alt="Kapper Sven" class="nav-logo-img" /></a>
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
@@ -42,14 +39,21 @@
       <p class="section-label">Tarieven</p>
       <h2 class="section-title">Wat kost het?</h2>
       <p class="section-sub">Alle prijzen zijn inclusief btw</p>
-      <div class="prijzen-wrapper" id="prijzen-container">
+      <div class="prijzen-wrapper">
         <div class="prijs-categorie">
           <div class="prijs-cat-header">
             <div class="prijs-cat-icon"><i class="fas fa-cut"></i></div>
             <h3>Tarieven</h3>
           </div>
-          <div class="prijs-items" id="prijs-items">
-            <!-- Wordt ingeladen via /api/content -->
+          <div class="prijs-items">
+            <div class="prijs-item">
+              <span class="prijs-naam">Knippen</span>
+              <span class="prijs-bedrag">€ 10,00</span>
+            </div>
+            <div class="prijs-item">
+              <span class="prijs-naam">Knippen + baard</span>
+              <span class="prijs-bedrag">€ 12,50</span>
+            </div>
           </div>
         </div>
       </div>
@@ -135,18 +139,5 @@
   </footer>
 
   <script src="script.js"></script>
-  <script>
-    fetch('/api/content')
-      .then(r => r.json())
-      .then(data => {
-        const container = document.getElementById('prijs-items');
-        container.innerHTML = data.prijzen.map(p => `
-          <div class="prijs-item">
-            <span class="prijs-naam">${p.naam}</span>
-            <span class="prijs-bedrag">${p.prijs}</span>
-          </div>
-        `).join('');
-      });
-  </script>
 </body>
 </html>
