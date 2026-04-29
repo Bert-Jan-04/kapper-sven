@@ -14,8 +14,7 @@
   <nav id="navbar">
     <div class="nav-container">
       <div class="logo">
-        <span class="logo-main">Kapper Sven</span>
-        <span class="logo-sub">Kapsalon Wijnjewoude</span>
+        <a href="index.html"><img src="afbeeldingen/Logo-kapper-sven.png" alt="Kapper Sven" class="nav-logo-img" /></a>
       </div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
@@ -23,7 +22,6 @@
 
         <li><a href="prijzen.html">Prijzen</a></li>
         <li><a href="openingstijden.html">Openingstijden</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
       <a href="afspraak.html" class="btn-nav">Afspraak maken</a>
@@ -35,42 +33,103 @@
 
   <!-- HERO -->
   <section class="hero" id="home">
-    <div class="hero-video-slider">
-      <video class="hero-video active" src="resultaten-filpmjes/0A38B672-17FE-4AD8-9A41-0DFDE33D0231.MOV" muted playsinline></video>
-      <video class="hero-video" src="resultaten-filpmjes/2A576B7A-906A-42A2-8FA8-042B5386FF74.MOV" muted playsinline></video>
-      <video class="hero-video" src="resultaten-filpmjes/50B9F780-046D-41B1-87BF-6320D4D5D882.MOV" muted playsinline></video>
-      <video class="hero-video" src="resultaten-filpmjes/A8D1A7CD-DC68-4CEB-B804-E11BA41040FC.MOV" muted playsinline></video>
-      <video class="hero-video" src="resultaten-filpmjes/BDE9BFA0-6476-45BC-9278-59501E6EAA14.MOV" muted playsinline></video>
-      <video class="hero-video" src="resultaten-filpmjes/EFFE60E9-DC7A-45D2-ABEA-A17CA65DD595.MOV" muted playsinline></video>
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image: url('afbeeldingen/foto_sven_2.jpg')"></div>
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <div class="hero-badge"><span>✦ Premium Barbershop Wijnjewoude ✦</span></div>
-      <h1>Kapper Sven</h1>
+      <h1>FRESHCUT</h1>
       <p class="hero-tagline">Dé specialist in herenkapsels<br><strong>in het hart van Wijnjewoude</strong></p>
       <div class="hero-btns">
         <a href="afspraak.html" class="btn-primary">Afspraak maken</a>
         <a href="#diensten" class="btn-secondary">Bekijk diensten</a>
       </div>
-      <div class="hero-stats">
-        <div class="hero-stat">
-          <strong>500+</strong>
-          <span>Tevreden klanten</span>
+    </div>
+  </section>
+
+  <!-- BOEKINGSBALK -->
+  <section class="boek-balk">
+    <div class="boek-balk-inner">
+      <div class="boek-veld">
+        <label><i class="fas fa-cut"></i> Dienst</label>
+        <select id="boek-dienst" name="dienst">
+          <option value="">Kies een dienst</option>
+          <option>Heren Knippen</option>
+          <option>Knippen + Wassen + Stylen</option>
+          <option>Alles-in-één pakket</option>
+          <option>Fade &amp; Taper</option>
+          <option>Baard Trimmen</option>
+          <option>Knippen + Baard</option>
+          <option>Haar Styling</option>
+        </select>
+      </div>
+      <div class="boek-veld-divider"></div>
+      <div class="boek-veld">
+        <label><i class="fas fa-calendar-alt"></i> Datum</label>
+        <input type="date" id="boek-datum" name="datum" />
+      </div>
+      <div class="boek-veld-divider"></div>
+      <div class="boek-veld">
+        <label><i class="fas fa-clock"></i> Tijdstip</label>
+        <select id="boek-tijd" name="tijd">
+          <option value="">Kies een tijdstip</option>
+          <option>12:30</option>
+          <option>13:00</option>
+          <option>13:30</option>
+          <option>14:00</option>
+          <option>14:30</option>
+          <option>15:00</option>
+          <option>15:30</option>
+          <option>17:00</option>
+          <option>17:30</option>
+          <option>18:00</option>
+          <option>18:30</option>
+        </select>
+      </div>
+      <button type="button" class="btn-primary boek-balk-btn" onclick="navigeerNaarAfspraak()">Boek nu <i class="fas fa-arrow-right"></i></button>
+    </div>
+  </section>
+
+  <!-- DIENSTEN -->
+  <section class="section section-dark" id="diensten">
+    <img src="afbeeldingen/Logo-kapper-sven.png" class="diensten-logo-bg" alt="" aria-hidden="true" />
+    <div class="container">
+      <p class="section-label">Wat wij bieden</p>
+      <h2 class="section-title">Onze Diensten</h2>
+      <p class="section-sub">Gespecialiseerd in herenkapsels, altijd scherp, altijd on-trend</p>
+      <div class="diensten-grid diensten-grid--3">
+        <div class="dienst-card">
+          <div class="dienst-card-img">
+            <img src="afbeeldingen/foto-taper-fade.jpg" alt="Heren Knippen" />
+          </div>
+          <div class="dienst-card-body">
+            <div class="dienst-nummer">01</div>
+            <h3>Heren Knippen</h3>
+            <p>Stijlvol knippen en stylen. Van klassiek tot modern, altijd een scherp resultaat.</p>
+          </div>
         </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <strong>4,7 ★</strong>
-          <span>Google rating</span>
+        <div class="dienst-card">
+          <div class="dienst-card-img">
+            <img src="afbeeldingen/foto-burst-fade.jpg" alt="Fade & Taper" />
+          </div>
+          <div class="dienst-card-body">
+            <div class="dienst-nummer">02</div>
+            <h3>Fade & Taper</h3>
+            <p>Van low taper fade tot burst fade, strakke overgangen die perfect aansluiten op jouw stijl.</p>
+          </div>
         </div>
-        <div class="hero-stat-divider"></div>
-        <div class="hero-stat">
-          <strong>Op afspraak</strong>
-          <span>Altijd een plek</span>
+        <div class="dienst-card">
+          <div class="dienst-card-img">
+            <img src="afbeeldingen/foto-baard-trimmen.jpg" alt="Baard Trimmen" />
+          </div>
+          <div class="dienst-card-body">
+            <div class="dienst-nummer">03</div>
+            <h3>Baard Trimmen</h3>
+            <p>Strakke baard of verzorgde stubble, Sven zorgt voor een perfect afgewerkt resultaat.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="hero-scroll" onclick="document.getElementById('over').scrollIntoView({behavior:'smooth'})">
-      <i class="fas fa-chevron-down"></i>
     </div>
   </section>
 
@@ -78,12 +137,12 @@
   <section class="section" id="over">
     <div class="container over-grid">
       <div class="over-img">
-        <img src="kapper-sven-afbeelding.JPG" alt="Kapper Sven" />
+        <img src="afbeeldingen/kapper-sven-afbeelding.JPG" alt="Kapper Sven" />
       </div>
       <div class="over-tekst">
         <p class="section-label">Over de kapper</p>
         <h2 class="section-title">Hallo, ik ben Sven</h2>
-        <p class="over-intro">Met 21 jaar ben ik jong, gedreven en volledig op de hoogte van alle huidige trends op het gebied van herenkapsels. Ik richt me 100% op heren , van klassieke coupe tot de nieuwste fades en moderne stijlen. Frisse energie, scherpe skills en altijd persoonlijk advies.</p>
+        <p class="over-intro">Met 21 jaar ben ik jong, gedreven en volledig op de hoogte van alle huidige trends op het gebied van herenkapsels. Ik richt me 100% op heren, van klassieke coupe tot de nieuwste fades en moderne stijlen. Frisse energie, scherpe skills en altijd persoonlijk advies.</p>
         <ul class="over-punten">
           <li><i class="fas fa-check"></i> Gespecialiseerd in herenkapsels & baardstijling</li>
           <li><i class="fas fa-check"></i> Altijd op de hoogte van de nieuwste trends</li>
@@ -95,51 +154,14 @@
     </div>
   </section>
 
-  <!-- DIENSTEN -->
-  <section class="section section-dark" id="diensten">
-    <div class="container">
-      <p class="section-label">Wat wij bieden</p>
-      <h2 class="section-title">Onze Diensten</h2>
-      <p class="section-sub">Gespecialiseerd in herenkapsels , altijd scherp, altijd on-trend</p>
-      <div class="diensten-grid">
-        <div class="dienst-card">
-          <div class="dienst-nummer">01</div>
-          <div class="dienst-icon"><i class="fas fa-user-tie"></i></div>
-          <h3>Heren Knippen</h3>
-          <p>Stijlvol knippen en stylen. Van klassiek tot modern, altijd een scherp resultaat.</p>
-        </div>
-        <div class="dienst-card">
-          <div class="dienst-nummer">02</div>
-          <div class="dienst-icon"><i class="fas fa-layer-group"></i></div>
-          <h3>Fade & Taper</h3>
-          <p>Van low taper fade tot burst fade , strakke overgangen die perfect aansluiten op jouw stijl.</p>
-        </div>
-        <div class="dienst-card">
-          <div class="dienst-nummer">03</div>
-          <div class="dienst-icon"><i class="fas fa-spa"></i></div>
-          <h3>Baard Trimmen</h3>
-          <p>Strakke baard of verzorgde stubble , Sven zorgt voor een perfect afgewerkt resultaat.</p>
-        </div>
-        <div class="dienst-card">
-          <div class="dienst-nummer">04</div>
-          <div class="dienst-icon"><i class="fas fa-magic"></i></div>
-          <h3>Haar Styling</h3>
-          <p>Wassen, föhnen en stylen met professionele producten voor een look die de hele dag zit.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- GALERIJ -->
   <section class="gallery-section" id="galerij">
     <div class="gallery-grid">
       <div class="gallery-item">
-        <img src="kapper-resultaat-1.jpg" alt="Resultaat Kapper Sven" />
-        <div class="gallery-overlay"><i class="fas fa-cut"></i></div>
+        <video src="resultaat-taper-fade.MOV" autoplay muted loop playsinline></video>
       </div>
       <div class="gallery-item">
-        <img src="foto_sven_2.jpg" alt="Sven Dijkstra" />
-        <div class="gallery-overlay"><i class="fas fa-cut"></i></div>
+        <video src="resultaat-burst-fade.MOV" autoplay muted loop playsinline></video>
       </div>
       <div class="gallery-item gallery-item--cta">
         <div class="gallery-cta">
@@ -250,51 +272,6 @@
     </div>
   </section>
 
-  <!-- REVIEWS -->
-  <section class="section section-dark" id="reviews">
-    <div class="container">
-      <p class="section-label">Wat klanten zeggen</p>
-      <h2 class="section-title">Reviews</h2>
-      <div class="google-rating">
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-        <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-        <strong>4,7</strong> op Google , gebaseerd op 200+ beoordelingen
-      </div>
-      <div class="reviews-grid">
-        <div class="review-card">
-          <div class="review-header">
-            <div class="review-avatar">M</div>
-            <div>
-              <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-              <span class="reviewer">Marieke V.</span>
-            </div>
-          </div>
-          <p>"Altijd super tevreden hier! De sfeer is gezellig en mijn haar zit er elke keer perfect bij. Echt aanrader!"</p>
-        </div>
-        <div class="review-card">
-          <div class="review-header">
-            <div class="review-avatar">T</div>
-            <div>
-              <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-              <span class="reviewer">Thomas B.</span>
-            </div>
-          </div>
-          <p>"Beste barbier van de regio. Goed luisteren naar wat je wil en altijd een scherp resultaat. Ga nergens anders meer heen."</p>
-        </div>
-        <div class="review-card">
-          <div class="review-header">
-            <div class="review-avatar">S</div>
-            <div>
-              <div class="review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-              <span class="reviewer">Sandra K.</span>
-            </div>
-          </div>
-          <p>"Mijn kinderen gaan hier altijd mee naartoe. Ze zijn geduldig met de kleintjes en het resultaat is elke keer geweldig."</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- CTA BANNER -->
   <section class="cta-section">
     <div class="cta-overlay"></div>
@@ -336,7 +313,6 @@
   
           <li><a href="prijzen.html">Prijzen</a></li>
           <li><a href="openingstijden.html">Openingstijden</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -353,5 +329,18 @@
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    function navigeerNaarAfspraak() {
+      const dienst = document.getElementById('boek-dienst').value;
+      const datum = document.getElementById('boek-datum').value;
+      const tijd = document.getElementById('boek-tijd').value;
+      const params = new URLSearchParams();
+      if (dienst) params.set('dienst', dienst);
+      if (datum) params.set('datum', datum);
+      if (tijd) params.set('tijd', tijd);
+      const query = params.toString();
+      window.location.href = 'afspraak.html' + (query ? '?' + query : '');
+    }
+  </script>
 </body>
 </html>

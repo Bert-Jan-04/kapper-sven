@@ -22,18 +22,15 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
-// ─── Hero video slider ───────────────────────────────────────────────────────
-const heroVideos = Array.from(document.querySelectorAll('.hero-video'));
-if (heroVideos.length > 0) {
-  let activeIdx = 0;
-  heroVideos[0].play();
-
+// ─── Hero afbeelding slider ───────────────────────────────────────────────────
+const heroSlides = Array.from(document.querySelectorAll('.hero-slide'));
+if (heroSlides.length > 1) {
+  let current = 0;
   setInterval(() => {
-    heroVideos[activeIdx].classList.remove('active');
-    activeIdx = (activeIdx + 1) % heroVideos.length;
-    heroVideos[activeIdx].classList.add('active');
-    heroVideos[activeIdx].play();
-  }, 4000);
+    heroSlides[current].classList.remove('active');
+    current = (current + 1) % heroSlides.length;
+    heroSlides[current].classList.add('active');
+  }, 7500);
 }
 
 // ─── Hero foto zoom animatie (over.html) ─────────────────────────────────────
